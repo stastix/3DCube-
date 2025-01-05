@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 3D Cube Project
+
+This project uses **Next.js** with **Three.js** to create a 3D cube that can be interacted with in the browser. Below are the instructions for running the project.
+
+## Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+- [Docker](https://www.docker.com/get-started) (for running the project in a container)
+- [Node.js](https://nodejs.org/en/) (for running the development version if not using Docker)
 
 ## Getting Started
 
-First, run the development server:
+### Clone the Repository
+
+Clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/stastix/3DCube-.git
+cd 3d-cube
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Follow these steps to build and run the project:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Build the Docker Image:
 
-## Learn More
+In the root of the project directory, run:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+docker build -t 3d-cube .
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This will build the Docker image for the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. Run the Docker Container:
 
-## Deploy on Vercel
+After building the Docker image, run it with the following command:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+docker run -p 3000:3000 3d-cube
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This will start the Next.js server inside the Docker container and map port 3000 from the container to port 3000 on your local machine.
+
+### 3. Access the Application
+
+Once the container is running, open your browser and go to:
+
+```bash
+http://localhost:3000
+```
+
+The application should be accessible at this URL.
+
+### 4.stopping the container
+
+1. List your running Docker containers:
+
+```bash
+  docker images
+
+```
+
+2. Find the container ID for 3d-cube
+
+3. Run
+
+```bash
+  docker stop <container_id>
+```
+
+## Project Details
+
+Built With
+Next.js: React framework for production.
+Three.js: JavaScript library for creating 3D graphics in the browser.
+Docker: Platform for developing, shipping, and running applications in containers.
+
+```
+
+```
