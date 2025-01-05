@@ -7,7 +7,6 @@ This project uses **Next.js** with **Three.js** to create a 3D cube that can be 
 Before you begin, make sure you have the following installed:
 
 - [Docker](https://www.docker.com/get-started) (for running the project in a container)
-- [Node.js](https://nodejs.org/en/) (for running the development version if not using Docker)
 
 ## Getting Started
 
@@ -54,7 +53,7 @@ http://localhost:3000
 
 The application should be accessible at this URL.
 
-### 4.stopping the container
+### 4. stopping the container
 
 1. List your running Docker containers:
 
@@ -77,3 +76,5 @@ Built With
 Next.js: React framework for production.
 Three.js: JavaScript library for creating 3D graphics in the browser.
 Docker: Platform for developing, shipping, and running applications in containers.
+
+
