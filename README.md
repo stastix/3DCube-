@@ -54,7 +54,7 @@ http://localhost:3000
 
 The application should be accessible at this URL.
 
-### 4.stopping the container
+### 4. stopping the container
 
 1. List your running Docker containers:
 
@@ -78,6 +78,4 @@ Next.js: React framework for production.
 Three.js: JavaScript library for creating 3D graphics in the browser.
 Docker: Platform for developing, shipping, and running applications in containers.
 
-```
 
-```
