@@ -16,7 +16,7 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/stastix/3DCube-.git
-cd 3d-cube
+cd 3DCube-
 ```
 
 ## Running the Project
@@ -76,5 +76,3 @@ Built With
 Next.js: React framework for production.
 Three.js: JavaScript library for creating 3D graphics in the browser.
 Docker: Platform for developing, shipping, and running applications in containers.
-
-
