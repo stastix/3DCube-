@@ -1,6 +1,11 @@
 # 3D Cube Project
 
-This project uses **Next.js** with **Three.js** to create a 3D cube that can be interacted with in the browser. Below are the instructions for running the project.
+This project uses **Next.js** with **Three.js** to create a 3D cube that can be interacted with in the browser Users can : 
+1.Toggle between a cube, sphere, and cylinder.
+2.Move the object using arrow keys.
+3.Change the object's color interactively.
+4.Achieve a perfect 100 Lighthouse performance score by optimizing performance.
+Below are the instructions for running the project.
 
 ## Prerequisites
 
